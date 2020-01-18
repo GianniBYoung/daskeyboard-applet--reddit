@@ -1,23 +1,18 @@
 'use strict';
-import creds;
+// import creds from 'creds.json';
+// // var creds = require("./creds.json");
 const snoowrap = require('snoowrap');
 
-
-
-// Create a new snoowrap requester with OAuth credentials.
-// For more information on getting credentials, see here: https://github.com/not-an-aardvark/reddit-oauth-helper
 const r = new snoowrap({
-  userAgent: creds.userAgent,
-  clientId: creds.clientId,
-  clientSecret: creds.clientSecret,
-  refreshToken: creds.refreshToken'
+  // userAgent: creds.userAgent,
+  // clientId: creds.clientId,
+  // clientSecret: creds.clientSecret,
+  // refreshToken: creds.refreshToken
+  userAgent: 'copmuter',
+      clientId: '81RAdGNDkcEjow',
+      clientSecret: 'yeG6ghwpfTXh7bmVS4n6K5zCur0',
+      refreshToken: '429012468801-_EAaoeTkviXImAvm2-YQyV0j_nM',
 });
 
-// Alternatively, just pass in a username and password for script-type apps.
-const otherRequester = new snoowrap({
-  userAgent: 'put your user-agent string here',
-  clientId: 'put your client id here',
-  clientSecret: 'put your client secret here',
-  username: 'put your username here',
-  password: 'put your password here'
-});
+
+r.getInbox().then(console.log)
