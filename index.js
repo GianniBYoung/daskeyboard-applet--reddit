@@ -26,65 +26,23 @@ class RedditNotification extends q.DesktopApp {
   constructor() {
     super();
     // store a record of previously notified deals
-    this.notified = {};
+    //this.notified = {};
     // run every 5 min
-    this.pollingInterval = 5 * 60 * 1000;
-  }
-
-  async applyConfig() {
-    const userLogins = this.config.userLogins;
-
-    if (userLogins) {
-      logger.info("My user logins are: " + JSON.stringify(userLogins));
-
-      for (let login of userLogins) {
-        if (null == login || login.trim() == '') {
-          throw new Error("User logins must not be empty.")
-        }
-      }
-    }
-  }
-
-
-generateSignal(data) {
-    for (let stream of data.data) {
-        return new q.Signal({
-          points: [
-            [
-              new q.Point('#FF0000',q.Effects.BLINK)
-            ]
-          ]
-        });
-      }
-    return null;
+    //this.pollingInterval = 5 * 60 * 1000;
   }
 
   async run() {
-    const userLogins = this.config.userLogins;
-
-    if (userLogins) {
-      logger.info("My user logins are: " + JSON.stringify(userLogins));
-
-      return retrieveData(userLogins)
-        .then(body => {
-          return this.generateSignal(body);
-        }).catch(error => {
-          logger.error(`Error while getting Twitch data: ${error}`);
-          if(`${error.message}`.includes("getaddrinfo")){
-          }else{
-            return q.Signal.error([`The Reddit service returned an error. Detail: ${error}`]);
-          }
-        });
-    } else {
-      logger.warn("No userLogins configured.");
-      return null;
-    }
-  }
+    return new q.Signal({
+      points: [
+        [
+          new q.Point('#FF0000',q.Effects.BLINK)
+        ]
+      ]
+    });
 }
 
 module.exports = {
   RedditNotification: RedditNotification,
-  retrieveData: retrieveData,
 }
 
 const applet = new RedditNotification();
