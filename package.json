@@ -1,22 +1,50 @@
 {
-  "name": "corn",
-  "version": "1.0.0",
-  "description": "Gets various info from reddit and displays on the das q",
+  "name": "daskeyboard-applet--reddit",
+  "displayName": "Reddit",
+  "version": "1.0.3",
+  "description": "Displays live stream notifications.",
+  "longDescription": "Receive notifications on a Das Keyboard Q whenever your favorite streamers are active.",
+  "officialProductName": "Twitch",
+  "appUrl": "",
+  "isSingleton": false,
+  "videoUrl": "",
+  "icon": "assets/icon.png",
+  "image": "assets/image-missing.png",
+  "publisher": "Das Keyboard",
+  "authorName": "Das Keyboard",
+  "authorUrl": "https://twitter.com/daskeyboard",
+  "issuesUrl": "https://github.com/daskeyboard/daskeyboard-applet--twitch-streams/issues",
+  "homePageUrl": "https://github.com/dasKeyboard/daskeyboard-applet--twitch-streams",
+  "developerRepoUrl": "https://github.com/daskeyboard/daskeyboard-applet--twitch-streams",
+  "license": "MIT",
+  "licenseUrl": "https://spdx.org/licenses/MIT.html",
+  "changelogUrl": "CHANGELOG.md",
+  "readMeUrl": "README.md",
+  "readMeEndUserUrl": "README_ENDUSER.md",
+  "engines": {
+    "das-keyboard-q": "3.1.0"
+  },
+  "qActionUrl": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/GianniBYoung/corn-hacks.git"
-  },
-  "author": "Gianni Young, Nick Burbach, Benjamin Reisen",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/GianniBYoung/corn-hacks/issues"
-  },
-  "homepage": "https://github.com/GianniBYoung/corn-hacks#readme",
   "dependencies": {
-    "yarn": "^1.21.1"
+    "daskeyboard-applet": "^2.11.1"
+  },
+  "qConfig": {
+    "geometry": {
+      "width": 1,
+      "height": 1,
+      "defaults": {
+        "origin": {
+          "x": 1,
+          "y": 1
+        }
+      }
+    }
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
   }
 }
