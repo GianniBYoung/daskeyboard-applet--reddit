@@ -1,6 +1,4 @@
 'use strict';
-// import creds from 'creds.json';
-// // var creds = require("./creds.json");
 const snoowrap = require('snoowrap');
 const r = new snoowrap({
   // userAgent: creds.userAgent,
