@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/GianniBYoung/corn-hacks/issues"
   },
-  "homepage": "https://github.com/GianniBYoung/corn-hacks#readme"
+  "homepage": "https://github.com/GianniBYoung/corn-hacks#readme",
+  "dependencies": {
+    "yarn": "^1.21.1"
+  }
 }
