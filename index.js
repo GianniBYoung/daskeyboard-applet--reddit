@@ -52,7 +52,7 @@ generateSignal(data) {
         return new q.Signal({
           points: [
             [
-              new q.Point('#0000FF',q.Effects.BLINK)
+              new q.Point('#FF0000',q.Effects.BLINK)
             ]
           ]
         });
