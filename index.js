@@ -1,5 +1,9 @@
 'use strict';
+const request = require('request-promise');
 const snoowrap = require('snoowrap');
+const q = require('daskeyboard-applet');
+const logger = q.logger;
+
 const r = new snoowrap({
   // userAgent: creds.userAgent,
   // clientId: creds.clientId,
@@ -16,9 +20,6 @@ if (r.getUser('Tight-Document').has_mail) {
   console.log("You have mail!");
 }
 
-const request = require('request-promise');
-const q = require('daskeyboard-applet');
-const logger = q.logger;
 
 
 class RedditNotification extends q.DesktopApp {
