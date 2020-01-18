@@ -1,0 +1,19 @@
+{
+  "name": "corn",
+  "version": "1.0.0",
+  "description": "Gets various info from reddit and displays on the das q",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GianniBYoung/corn-hacks.git"
+  },
+  "author": "Gianni Young, Nick Burbach, Benjamin Reisen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GianniBYoung/corn-hacks/issues"
+  },
+  "homepage": "https://github.com/GianniBYoung/corn-hacks#readme"
+}
