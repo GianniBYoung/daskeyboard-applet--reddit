@@ -3,7 +3,13 @@ import creds;
 const snoowrap = require('snoowrap');
 
 
-
+class redditNotif extends q.DesktopApp {
+  constructor() {
+    super();
+    // run every 10000 ms
+    this.pollingInterval = 10000;
+    logger.info("Reddit Checker ready to go");
+  }
 // Create a new snoowrap requester with OAuth credentials.
 // For more information on getting credentials, see here: https://github.com/not-an-aardvark/reddit-oauth-helper
 const r = new snoowrap({
