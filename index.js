@@ -46,7 +46,7 @@ class RedditNotification extends q.DesktopApp {
 }
 
 module.exports = {
-  RedditNotification: RedditNotification,
+  RedditNotification: RedditNotification
 }
 
 const applet = new RedditNotification();
