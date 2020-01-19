@@ -8,19 +8,17 @@ const r = new snoowrap({
       clientSecret: 'yeG6ghwpfTXh7bmVS4n6K5zCur0',
       refreshToken: '429012468801-_EAaoeTkviXImAvm2-YQyV0j_nM',
 });
-
+r.getUnread().get(0).author.then(console.log);
+r.getUser("Tight-Document").inbox_count.then(console.log);
 
 class RedditNotification extends q.DesktopApp {
   constructor() {
     super();
-    // store a record of previously notified deals
-    //this.notified = {};
-    // run every 5 min
     this.pollingInterval = 15 * 1000;
   }
 
   async run() {
-    if (r.getUser('Tight-Document').is_gold) {
+    if (r.getUser('Tight-Document').has_mail {
       return new q.Signal({
         points: [
           [
@@ -28,7 +26,8 @@ class RedditNotification extends q.DesktopApp {
           ]
         ],
         name:'Unread Reddit Messages: ',
-        message: 'Hello World',
+        message: 'Sender of most recent message: '+ JSON.stringify(r.getUnread().get(0).author+
+      '\nInbox count: '+ JSON.stringify(r.getUser().inbox_count)),
       });
     } else {
       return new q.Signal({
