@@ -26,8 +26,7 @@ class RedditNotification extends q.DesktopApp {
           ]
         ],
         name:'Unread Reddit Messages: ',
-        message: 'Sender of most recent message: '+ JSON.stringify(r.getUnread().get(0).author+
-      '\nInbox count: '+ JSON.stringify(r.getUser().inbox_count)),
+        message: 'Sender of most recent message: ',
       });
     } else {
       return new q.Signal({
@@ -35,7 +34,7 @@ class RedditNotification extends q.DesktopApp {
           [
             new q.Point('#000000',q.Effects.BREATHE)
           ]
-        ]
+        ],
       });
     }
 
