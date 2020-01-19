@@ -24,7 +24,7 @@ class RedditNotification extends q.DesktopApp {
       return new q.Signal({
         points: [
           [
-            new q.Point('#FF441C',q.Effects.BLINK)
+            new q.Point('#FF0000',q.Effects.BLINK)
           ]
         ],
         name:'Unread Reddit Messages: ',
