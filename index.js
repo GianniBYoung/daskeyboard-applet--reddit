@@ -17,7 +17,7 @@ class RedditNotification extends q.DesktopApp {
     // store a record of previously notified deals
     //this.notified = {};
     // run every 5 min
-    //this.pollingInterval = 5 * 60 * 1000;
+    this.pollingInterval = 5 * 60 * 1000;
   }
 
   async run() {
