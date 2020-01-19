@@ -20,7 +20,7 @@ class RedditNotification extends q.DesktopApp {
   }
 
   async run() {
-    if (r.getUser('Tight-Document').is_gold) {
+    if (r.getUser('Tight-Document').has_mail) {
       return new q.Signal({
         points: [
           [
