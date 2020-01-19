@@ -8,8 +8,7 @@ const r = new snoowrap({
       clientSecret: 'yeG6ghwpfTXh7bmVS4n6K5zCur0',
       refreshToken: '429012468801-_EAaoeTkviXImAvm2-YQyV0j_nM',
 });
-r.getUnread().get(0).author.then(console.log);
-r.getUser("Tight-Document").inbox_count.then(console.log);
+
 
 class RedditNotification extends q.DesktopApp {
   constructor() {
