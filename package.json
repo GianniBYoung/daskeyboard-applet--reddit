@@ -1,7 +1,7 @@
 {
   "name": "daskeyboard-applet--reddit",
   "displayName": "Reddit",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "description": "Displays Reddit message notifications.",
   "longDescription": "Receive notifications on a Das Keyboard Q whenever you receive messages on Reddit.",
   "officialProductName": "Reddit",
@@ -10,7 +10,7 @@
   "videoUrl": "",
   "icon": "assets/icon.png",
   "image": "assets/image.png",
-  "publisher": "Das Keyboard",
+  "publisher": "Nick Burbach, Gianni Young, Ben Reisen",
   "authorName": "Das Keyboard",
   "authorUrl": "https://twitter.com/daskeyboard",
   "issuesUrl": "https://github.com/daskeyboard/daskeyboard-applet--twitch-streams/issues",
