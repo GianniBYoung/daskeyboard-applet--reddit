@@ -17,20 +17,17 @@ class RedditNotification extends q.DesktopApp {
     // store a record of previously notified deals
     //this.notified = {};
     // run every 5 min
-    this.pollingInterval = 60 * 1000;
+    //this.pollingInterval = 5 * 60 * 1000;
   }
 
   async run() {
-    if(r.getUser('Tight-Document'.has_mail){
-      return new q.Signal({
-        points: [
-          [
-            new q.Point('#FF0000',q.Effects.BLINK)
-          ]
+    return new q.Signal({
+      points: [
+        [
+          new q.Point('#FF0000',q.Effects.BLINK)
         ]
-      });
-    }
-
+      ]
+    });
 }
 }
 
