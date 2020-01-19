@@ -44,6 +44,7 @@ class RedditNotification extends q.DesktopApp {
       ]
     });
 }
+}
 
 module.exports = {
   RedditNotification: RedditNotification
