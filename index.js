@@ -16,15 +16,25 @@ class RedditNotification extends q.DesktopApp {
     // store a record of previously notified deals
     //this.notified = {};
     // run every 5 min
-    //this.pollingInterval = 5 * 60 * 1000;
+    this.pollingInterval = 15 * 1000;
   }
 
   async run() {
-    if (r.getUser('Tight-Document').has_mail) {
+    if (r.getUser('Tight-Document').is_gold) {
       return new q.Signal({
         points: [
           [
-            new q.Point('#FF0000',q.Effects.BLINK)
+            new q.Point('#FF441C',q.Effects.BLINK)
+          ]
+        ],
+        name:'Unread Reddit Messages: ',
+        message: 'Hello World',
+      });
+    } else {
+      return new q.Signal({
+        points: [
+          [
+            new q.Point('#000000',q.Effects.BREATHE)
           ]
         ]
       });
