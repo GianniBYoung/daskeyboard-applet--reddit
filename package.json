@@ -2,13 +2,28 @@
   "name": "daskeyboard-applet--reddit",
   "displayName": "Reddit",
   "version": "1.0.0",
+<<<<<<< HEAD
+  "description": "Displays Reddit message notifications.",
+  "longDescription": "Receive notifications on a Das Keyboard Q whenever your Reddit account receives a message.",
+  "officialProductName": "Reddit",
+=======
   "description": "Displays new message notifications.",
   "longDescription": "Receive notifications on a Das Keyboard Q whenever you receive a message  in Reddit",
   "officialProductName": "Twitch",
+>>>>>>> dd59059c00c6b01dbe4bd8a66a3459bf1d5d1d80
   "appUrl": "",
   "isSingleton": false,
   "videoUrl": "",
   "icon": "assets/icon.png",
+<<<<<<< HEAD
+  "image": "assets/image.png",
+  "publisher": "Das Keyboard",
+  "authorName": "Das Keyboard",
+  "authorUrl": "https://twitter.com/daskeyboard",
+  "issuesUrl": "https://github.com/daskeyboard/daskeyboard-applet--reddit/issues",
+  "homePageUrl": "https://github.com/dasKeyboard/daskeyboard-applet--reddit",
+  "developerRepoUrl": "https://github.com/daskeyboard/daskeyboard-applet--reddit",
+=======
   "image": "assets/image-missing.png",
   "publisher": "Das Keyboard",
   "authorName": "Das Keyboard",
@@ -16,6 +31,7 @@
   "issuesUrl": "https://github.com/daskeyboard/daskeyboard-applet--twitch-streams/issues",
   "homePageUrl": "https://github.com/dasKeyboard/daskeyboard-applet--twitch-streams",
   "developerRepoUrl": "https://github.com/daskeyboard/daskeyboard-applet--twitch-streams",
+>>>>>>> dd59059c00c6b01dbe4bd8a66a3459bf1d5d1d80
   "license": "MIT",
   "licenseUrl": "https://spdx.org/licenses/MIT.html",
   "changelogUrl": "CHANGELOG.md",
@@ -42,7 +58,15 @@
           "y": 1
         }
       }
+<<<<<<< HEAD
+    },
+    "questions": [
+      {
+      }
+    ]
+=======
     }
+>>>>>>> dd59059c00c6b01dbe4bd8a66a3459bf1d5d1d80
   },
   "devDependencies": {
     "mocha": "^5.2.0"
