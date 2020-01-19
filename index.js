@@ -20,13 +20,16 @@ class RedditNotification extends q.DesktopApp {
   }
 
   async run() {
-    return new q.Signal({
-      points: [
-        [
-          new q.Point('#FF0000',q.Effects.BLINK)
+    if (r.getUser('Tight-Document').has_mail) {
+      return new q.Signal({
+        points: [
+          [
+            new q.Point('#FF0000',q.Effects.BLINK)
+          ]
         ]
-      ]
-    });
+      });
+    }
+
 }
 }
 
