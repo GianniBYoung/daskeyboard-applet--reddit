@@ -1,24 +1,15 @@
-//'use strict';
-//const request = require('request-promise');
-//const snoowrap = require('snoowrap');
+const request = require('request-promise');
 const q = require('daskeyboard-applet');
 const logger = q.logger;
 
 /**
- *
- const r = new snoowrap({
-  // userAgent: creds.userAgent,
-  // clientId: creds.clientId,
-  // clientSecret: creds.clientSecret,
-  // refreshToken: creds.refreshToken
-  userAgent: 'copmuter',
-      clientId: '81RAdGNDkcEjow',
-      clientSecret: 'yeG6ghwpfTXh7bmVS4n6K5zCur0',
-      refreshToken: '429012468801-_EAaoeTkviXImAvm2-YQyV0j_nM',
-});
-*
-**/
+ * Retrieve data from the service
+ */
+ async run() {
+   new q.Point('#0000FF',q.Effects.BLINK)
+ }
 
+<<<<<<< HEAD
 
 //if (r.getUser('Tight-Document').has_mail) {
 //  console.log("You have mail!");
@@ -51,3 +42,6 @@ module.exports = {
 }
 
 const applet = new RedditNotification();
+=======
+const applet = new TwitchStreams();
+>>>>>>> dd59059c00c6b01dbe4bd8a66a3459bf1d5d1d80
